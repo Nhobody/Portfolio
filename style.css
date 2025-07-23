@@ -124,18 +124,17 @@ a:hover {
   font-size: 55px;
 }
 
-.home-info h2{
+.home-info h2 {
   font-size: 32px;
   margin-top: -10px;
 }
 
-
-.home-info .btn-sci{
+.home-info .btn-sci {
   display: flex;
   align-items: center;
 }
 
-.button{
+.button {
   display: inline-block;
   padding: 10px 30px;
   background-color: #7cf03d;
