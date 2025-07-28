@@ -115,7 +115,7 @@ a:hover {
   margin-left: 20px;
   margin-right: 20px;
 
- visibility: hidden;
+  visibility: hidden;
   opacity: 0;
   animation: show-content 1.5s linear forwards;
   animation-delay: 1.6s;
@@ -126,8 +126,48 @@ a:hover {
 }
 
 .home-info h2 {
+  display: inline-block;
   font-size: 32px;
   margin-top: -10px;
+}
+
+.home-info h2 span {
+  position: relative;
+  display: inline-block;
+  color: transparent;
+  -webkit-text-stroke: 0.7px #7cf03d;
+  /*    */
+  animation-delay: calc(-4s * var(--i));
+}
+
+@keyframes display_txt {
+  25%,
+  100% {
+    display: none;
+  }
+}
+
+.home-info h2 span ::before {
+  content: attr(data-text);
+  width: 100%;
+  position: absolute;
+  width: 0;
+  border-right: 2px solid #7cf03d;
+  color: #7cf03d;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: fill-text 4s linear infinite;
+}
+
+@keyframes fill-text {
+  10%,
+  100% {
+    width: 0;
+  }
+  70%,
+  90% {
+    width: 100%;
+  }
 }
 
 .home-info .btn-sci {
