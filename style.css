@@ -136,7 +136,7 @@ a:hover {
   display: inline-block;
   color: transparent;
   -webkit-text-stroke: 0.7px #7cf03d;
-  /*    */
+    animation: display_txt 14s linear infinite;
   animation-delay: calc(-4s * var(--i));
 }
 
@@ -147,9 +147,8 @@ a:hover {
   }
 }
 
-.home-info h2 span ::before {
+.home-info h2 span::before {
   content: attr(data-text);
-  width: 100%;
   position: absolute;
   width: 0;
   border-right: 2px solid #7cf03d;
@@ -159,13 +158,13 @@ a:hover {
   animation: fill-text 4s linear infinite;
 }
 
-@keyframes fill-text {
-  10%,
-  100% {
+
+@keyframes fill-text{
+  10%,100%{
     width: 0;
   }
-  70%,
-  90% {
+
+  70%,90%{
     width: 100%;
   }
 }
@@ -238,6 +237,20 @@ a:hover {
   width: 615px;
   height: 615px;
   background: conic-gradient(transparent, transparent, transparent, #7cf03d);
+  transform: rotate(0deg);
+  animation: rotate_border 10s linear infinite;
+}
+
+.img-home .img-box::after{
+  animation-delay: -5s;
+}
+
+
+@keyframes rotate_border {
+  100%{
+    transform: rotate(360deg);
+  }
+  
 }
 
 .img-home .img-box .img-item {
