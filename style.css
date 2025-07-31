@@ -6,10 +6,6 @@
   box-sizing: border-box;
 }
 
-body{
-  display: block;
-}
-
 nav {
   background-color: transparent;
   height: 100px;
@@ -161,13 +157,14 @@ a:hover {
   animation: fill-text 4s linear infinite;
 }
 
-
-@keyframes fill-text{
-  10%,100%{
+@keyframes fill-text {
+  10%,
+  100% {
     width: 0;
   }
 
-  70%,90%{
+  70%,
+  90% {
     width: 100%;
   }
 }
@@ -244,17 +241,15 @@ a:hover {
   animation: rotate_border 10s linear infinite;
 }
 
-.img-home .img-box::after{
+.img-home .img-box::after {
   animation-delay: -5s;
-   background: conic-gradient(transparent, transparent, transparent, red);
+  background: conic-gradient(transparent, transparent, transparent, red);
 }
 
-
 @keyframes rotate_border {
-  100%{
+  100% {
     transform: rotate(360deg);
   }
-  
 }
 
 .img-home .img-box .img-item {
@@ -302,21 +297,36 @@ a:hover {
   }
 }
 
-
 .container-two {
+  display: flex;
+  justify-content: space-around;
   background-color: #1b9bff;
-  margin-top: 20px;
   display: flex;
   justify-content: center;
+  height: 50vh;
 }
 
-
-
-.card{
+.card {
   display: flex;
- 
-  height: 200px;
-  width: 200px;
+  height: 25em;
+  width: 25em;
   background-color: white;
   margin-left: 10px;
+  margin-top: 50px;
+}
+
+.card :hover {
+  background-color: #1f242d;
+}
+
+.one {
+  background-color: red;
+}
+
+.two {
+  background-color: green;
+}
+
+.three {
+  background-color: yellow;
 }
