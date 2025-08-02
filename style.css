@@ -7,7 +7,6 @@
 }
 
 nav {
-  background-color: transparent;
   height: 100px;
   width: 100%;
   padding-top: 10px;
@@ -16,6 +15,15 @@ nav {
   opacity: 0;
   animation: show-content 1.5s linear forwards;
   animation-delay: 1.2s;
+  transform: translateY(100%);
+  animation: navAni 0.5s ease forwards;
+  animation-delay: calc(0.1s * var(--s));
+}
+
+@keyframes navAni {
+  100% {
+    transform: translateX(0%);
+  }
 }
 
 @keyframes show-content {
@@ -110,7 +118,6 @@ a:hover {
   padding: 60px 9% 0;
   color: aliceblue;
   border-radius: 20px;
-  margin-top: 20px;
   margin-left: 20px;
   margin-right: 20px;
   visibility: hidden;
@@ -330,7 +337,6 @@ a:hover {
 .three {
   background-color: yellow;
 }
-
 
 .mess {
   display: flex;
