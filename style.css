@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+body{
+  
+}
+
 nav {
   height: 100px;
   width: 100%;
@@ -13,9 +17,12 @@ nav {
   display: flex;
   justify-content: center;
   opacity: 0;
+  animation: show-content 1.5s linear forwards;
+  animation-delay: 6s;
+  transform: translateY(100%);
 }
 
-/* nav::before {
+nav::before {
   content: "";
   position: absolute;
   top: 0;
@@ -23,14 +30,14 @@ nav {
   bottom: 0;
   width: 0%;
   background-color: #3498db; /* fill color */
-  animation: fillLeftToRight 8s linear forwards;
+  animation: fillLeftToRight 6s linear forwards;
 }
 
 @keyframes fillLeftToRight {
   to {
     width: 100%;
   }
-} */
+}
 
 @keyframes show-content {
   100% {
@@ -48,6 +55,7 @@ nav ul li {
   display: inline;
   line-height: 80px;
   margin: 0 5px;
+  
 }
 
 nav ul li a {
@@ -311,12 +319,15 @@ a:hover {
 }
 
 .container-two {
+  position: relative;
   display: flex;
   justify-content: space-around;
   background-color: #1b9bff;
   display: flex;
   justify-content: center;
   height: 50vh;
+  width: 1500px;
+  left: 10%;
 }
 
 .card {
@@ -351,4 +362,10 @@ a:hover {
   height: 100vh;
   margin-top: 50px;
   background-color: sandybrown;
+}
+
+footer{
+  background-color: slategray;
+  height: 100px;
+  
 }
