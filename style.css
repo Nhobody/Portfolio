@@ -15,7 +15,7 @@ nav {
   opacity: 0;
 }
 
-nav::before {
+/* nav::before {
   content: "";
   position: absolute;
   top: 0;
@@ -30,7 +30,7 @@ nav::before {
   to {
     width: 100%;
   }
-}
+} */
 
 @keyframes show-content {
   100% {
