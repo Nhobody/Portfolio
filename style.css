@@ -6,8 +6,7 @@
   box-sizing: border-box;
 }
 
-body{
-  
+body {
 }
 
 nav {
@@ -55,7 +54,6 @@ nav ul li {
   display: inline;
   line-height: 80px;
   margin: 0 5px;
-  
 }
 
 nav ul li a {
@@ -364,8 +362,7 @@ a:hover {
   background-color: sandybrown;
 }
 
-footer{
+footer {
   background-color: slategray;
   height: 100px;
-  
 }
