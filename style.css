@@ -334,8 +334,14 @@ a:hover {
   border-radius: 10px;
 }
 
-.card :hover {
+.card:hover {
   background-color: #1f242d;
+  opacity: 0.5;
+}
+
+.one:hover {
+  background-color: #1f242d;
+  opacity: 0.5;
 }
 
 .one {
@@ -355,13 +361,14 @@ a:hover {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  width: 1000px;
   margin-top: 50px;
   background-color: sandybrown;
+  left: 20%;
 }
 
 .subnav {
   display: flex;
+
   height: 50px;
   width: 100px;
   background-color: #1b9bff;
