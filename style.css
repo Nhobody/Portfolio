@@ -405,14 +405,14 @@ a:hover {
   margin-right: 10px;
 }
 
-<<<<<<< HEAD
+
 .lastElem {
   position: absolute;
   left: 50px;
   height: 100vh;
   background-color: white;
 }
-=======
+
 .lastElem{
   display: flex;
   justify-content: space-evenly;
@@ -429,4 +429,4 @@ a:hover {
 }
 
 
->>>>>>> bb97caad20bbafc1dc9e41ab894e1c1fe228eaff
+
