@@ -8,6 +8,7 @@
 
 body {
   background-color: #2c3e50;
+  overflow-x: hidden;
 }
 
 nav {
@@ -404,9 +405,28 @@ a:hover {
   margin-right: 10px;
 }
 
+<<<<<<< HEAD
 .lastElem {
   position: absolute;
   left: 50px;
   height: 100vh;
   background-color: white;
 }
+=======
+.lastElem{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(144, 21, 21);
+} 
+
+.div{
+  border: 2px solid black;
+  height: 200px;
+  width: 200px;
+  background-color: #1f3d51;
+}
+
+
+>>>>>>> bb97caad20bbafc1dc9e41ab894e1c1fe228eaff
