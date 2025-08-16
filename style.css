@@ -405,6 +405,8 @@ a:hover {
 }
 
 .lastElem {
+  position: absolute;
+  left: 50px;
   height: 100vh;
   background-color: white;
 }
